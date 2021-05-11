@@ -10,6 +10,8 @@
     "lib": "vue-cli-service build --target lib packages/index.js"
   },
   "dependencies": {
+    "@babel/core": "^7.14.0",
+    "babel-loader": "^8.2.2",
     "vue": "^2.6.11"
   },
   "devDependencies": {
