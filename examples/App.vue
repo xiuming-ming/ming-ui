@@ -1,6 +1,13 @@
 <template>
-  <div id="app">
-    我是ui组件库
+  <div class="acticle">
+    <!-- <xm-button>按钮</xm-button> -->
+    <!-- <xm-button type="primary">按钮</xm-button>
+    <xm-button type="success">按钮</xm-button>
+    <xm-button type="info">按钮</xm-button>
+    <xm-button type="warning">按钮</xm-button>
+    <xm-button type="danger">按钮</xm-button> -->
+    <xm-button type="danger">按钮</xm-button>
+    <xm-button type="warning">按钮</xm-button>
   </div>
 </template>
 
