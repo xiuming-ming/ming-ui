@@ -1,8 +1,12 @@
-import Button from './components/button'
+const requireComponent = require.context('./components', true, /\.vue$/)
 
-const install = function (Vue) {
-  // 注册组件
-  Vue.component(Button.name, Button)
+const install = (Vue) => {
+  if (install.installed) return
+  requireComponent.keys().forEach(fileName => {
+    const config = requireComponent(fileName)
+    const componentName = config.default.name
+    Vue.component(componentName, config.default || config)
+  })
 }
 
 if (typeof window !== 'undefined' && window.Vue) {

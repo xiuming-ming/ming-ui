@@ -7,7 +7,6 @@
     <xm-button type="warning">按钮</xm-button>
     <xm-button type="danger">按钮</xm-button> -->
     <xm-button type="danger">按钮</xm-button>
-    <xm-button type="warning">按钮</xm-button>
   </div>
 </template>
 
