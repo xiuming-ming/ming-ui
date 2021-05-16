@@ -6,14 +6,26 @@
     <xm-button type="info">按钮</xm-button>
     <xm-button type="warning">按钮</xm-button>
     <xm-button type="danger">按钮</xm-button> -->
-    <xm-button type="danger">按钮</xm-button>
+    <xm-button
+      type="danger"
+      @click.native="shwoMessage"
+    >按钮</xm-button>
   </div>
 </template>
 
 <script>
 
 export default {
-  name: 'App'
+  name: 'App',
+  methods: {
+    shwoMessage () {
+      // this.$Message({
+      //   type: 'success',
+      //   message: '1111'
+      // })
+      // this.$Message.success('1111222')
+    }
+  }
 }
 </script>
 
